@@ -12,7 +12,13 @@ Sélecteur{}-->color: yellow; (couleur du sélecteur)
 	      #FF00FF (couleur en hexadécimal, 00=min, FF = max, dans l'exemple, 1er FF = full red; 00=NoGreen, 2e FF=FullBlue; sur le modèle RGB)
 	      RGB(255,0,255) (même chose mais en base 10, 0=min, 255=max)
 	      RGBa(255,0,255,0.8) (Comme RGB() mais la dernière valeur est l'opacité, 0=transparent, 1=opaque, jouer sur la virgule)
-
+	      opacity: 0.456; (L'opacité de l'objet, meme fonctionnement que RGBa)
+	      text-align: center ou right/left ou justify ou inherit;(aligne le texte au bord de son élément parent selon l'argument)
+	      text-transform: lowercase ou uppercase ou capitalize ou none ou inherit; (transforme le texte selon l'argument)
+	      text-decoration: value; (underline, overline, line-through, blink, none, inherit)
+	      text-indent: 1px/1pt/ 1%; (déplace le text vers la droite du nombre de pixels ou de points indiqués, valeur negative --> par la gauche)
+	      text-shadow: 5px 5px 4px #111111 (crée une ombre, [x, y, propagation, couleur])
+	      -webkit-text-stroke: 1px black; (crée un contour pour le texte ATTENTION contour intérieur donc non-additionel)
 __________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Code complexe:
