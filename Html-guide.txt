@@ -1,0 +1,54 @@
+Choses courtes:
+
+<!DOCTYPE html>
+<!-- --> (commentaire)
+<html> (pour commencer et finir)
+<head> (partie des info sur la page) —>  <title> (titre de la page)
+					 <meta charset=“UTF-8”> (encodage)
+				 	 <link> (orpheline, pour linker un fichier css, arguments possibles: rel='stylesheet', href='fichier.css')
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+<body> (partie de la page concrètement) —> <h1><h2>[…]<h6> (titres h1=important, h6 = pas important)
+								    <p> (paragraphe)
+								    <mark> (choses importantes pour référencement, surligneur en jaune)
+								    <em> (choses importante, en italique)
+								    <strong> (choses importantes, en gras)
+								    <br> (orpheline, retour à la ligne normal)
+								    <hr> (orpheline, retour à la ligne, changement de thématique)
+	 							    <pre> (texte préformé, retours a la ligne et espaces conservés)
+								    <ul> (liste non ordonnée, avec des petits ronds)
+								    <ol> (liste ordonnée, avec des nombres)--> <ol type=“I”, “i”, “1”, “a”, “A” > (un certain style de numérotation)
+								    <li> (élément de liste)
+								    <dl> (liste de def) —> <dt> (therme à définir)
+											   <dd> (définition)
+								    <a> (lien, entre les balises texte à cliquer, dans la première balise, <a href=‘https://www.lien.com’> ou <a href='../yo/aaa.html>'
+									 ajouter un argument target='_blank' pour ouvrir dans un nouvel onglet)
+								    <img> (afficher une image: arguments src='', la source de l'image et alt'', un texte pour décrire l'image)
+								    &nbsp (pour qu'il y ait plus d'un espace à la suite, un par espace)
+								    <div> (pour englober plusieurs blocs, sert juste à faire en sorte qu'on puisse changer plusieurs choses en même temps en css)
+								    <span> (pour englober seulement un texte, de type inline, même fonction que <div>)
+								    
+____________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Code complexe:
+
+Ancres:
+	(Si la page est longue et qu'il faut scroller pour voir la suite, on peut utiliser une ancre)
+	<h1 id='ancreno1'> bonjour </h1> (titre avec id d'ancre)
+	<br> *50 (juste pour qu'on doivent scroller pour l'example)
+	<a href='#ancreno1'> clique ici pour retourner en haut </a> (lien de type ancre, attention, bien mettre un # avant le nom du lien pour que le code reconnaisse que c'est une ancre)
+
+Mail avec <a>:
+	<a href='mailto:adresseemail'> (pour ouvrir une page d'envoi email préremplie)
+
+Lien pour télécharger un fichier:
+	(mettre en href le nom du fichier/chemin si nécéssaire dans la première balise <a>)
+
+Afficher un texte normalement interprété par le navigateur:
+	(Pour afficher <br> par exemple: '&lt;br&gt;' ATTENTION pour représenter une '&', on écrit '&amp;')
+
+Ajouter une id:
+	(Pour presque toutes les balises: ajouter en argument id='nom', utilisable en fichier css lié)											
+Ajouter une classe:
+	(meme chose que pour une id mais avec class='nom')

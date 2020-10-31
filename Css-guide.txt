@@ -1,0 +1,26 @@
+Base:
+Commentaire : /* texte */
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+	 
+Sélecteur{}-->color: yellow; (couleur du sélecteur)
+	      font-size: 12px ou 9pt ou ; (taille du texte)
+	      font-style: italic; (style d'écriture, aussi inherit, normal)
+	      font-family: 'Century Gothic', sans-serif; (police d'écriture, le navigateur prend la première qu'il connait, mettre les noms de polices qui contiennent un espace entre guillemets)
+	      font-weight: 100 à 700 ou normal ou bold ou lighter; (la 'grace' de l'écriture)
+	      background-color: yellow; (couleur du fond)
+	      #FF00FF (couleur en hexadécimal, 00=min, FF = max, dans l'exemple, 1er FF = full red; 00=NoGreen, 2e FF=FullBlue; sur le modèle RGB)
+	      RGB(255,0,255) (même chose mais en base 10, 0=min, 255=max)
+	      RGBa(255,0,255,0.8) (Comme RGB() mais la dernière valeur est l'opacité, 0=transparent, 1=opaque, jouer sur la virgule)
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Code complexe:
+
+#id{} (sélecteur avec id donné à un élément dans un fichier HTML)
+.class{} (sélecteur avec classe donnée à un élément dans un fichier HTML)	    
+
+__________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Arbre de priorité:
+Du plus fort au moins fort: (directement sur l'élément)---(sur l'id de l'élément)---(sur la classe de l'élément)---(sur le type de l'élément dans le même fichier)---(sur le type de l'élément dans un autre fichier)---(sur le parent de l'élément dans le même fichier)---(sur le parent de l'élément dans un autre fichier) {dernier fichier css linké en priorité}
