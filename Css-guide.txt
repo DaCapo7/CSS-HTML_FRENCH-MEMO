@@ -5,7 +5,7 @@ ________________________________________________________________________________
 	 
 Sélecteur{}-->color: yellow; (couleur du sélecteur)
 	      font-size: 12px ou 9pt ou ; (taille du texte)
-	      font-style: italic; (style d'écriture, aussi inherit, normal)
+	      font-style: italic; (style d'écriture, aussi inherit, normal, oblique{qui force le texte en italique})
 	      font-family: 'Century Gothic', sans-serif; (police d'écriture, le navigateur prend la première qu'il connait, mettre les noms de polices qui contiennent un espace entre guillemets)
 	      font-weight: 100 à 700 ou normal ou bold ou lighter; (la 'grace' de l'écriture)
 	      background-color: yellow; (couleur du fond)
@@ -19,12 +19,40 @@ Sélecteur{}-->color: yellow; (couleur du sélecteur)
 	      text-indent: 1px/1pt/ 1%; (déplace le text vers la droite du nombre de pixels ou de points indiqués, valeur negative --> par la gauche)
 	      text-shadow: 5px 5px 4px #111111 (crée une ombre, [x, y, propagation, couleur])
 	      -webkit-text-stroke: 1px black; (crée un contour pour le texte ATTENTION contour intérieur donc non-additionel)
+	      line-height px pt %; (espace entre les lignes)
+	      letter-spacing px pt %; (espace entre les lettres, s'ajoute et est non égal)
+	      word-spacing px pt %; (même chose mais pour les mots)
+	      width pt % px; (largeur d'un élement)
+	      height: pt % px; (hauteur d'un élément)
+	      padding px pt % (marges intérieures de la boite, 4 arguments: top then left & right then bottom ou 1 pour tous)
+	      border 12px solid black; (bordure d'un élément, taille style couleur, ces valeurs peuvent êtres changés individuellement avec border-[style, width ou height, color])
+	      border-bottom/top/right/left: px pt %; (ajouter une bordure a un endroit)
+	      border-radius px pt %; (arrondis de la bordure, peut être mis top-right/left, bottom-right/left pour préciser le coin)
+	      margin (comme padding mais marges extérieures, si la largeur de la boite est définie, mettre auto en 2e argument centrera la boite)
+	      box-shadow px/pt/% px/pt/% px/pt/% color; (exactement comme text-shadow, peut être rajouté inset après la couleur pour faire comme si les bords de la boite étaient au-dessus du contenu)
+	      display arg; (change le comportement d'un élément, arg: inline, block, none (ce qui le casera) et inline-block; ce dernier fait se comporter l'element comme un inline mais on pourra lui 
+	      donner des priorité que seul un element de type block peut avoir, ex: width heigth, margin est...)
+	      position: arg; (donne un type de position à un élement, static: empeche de repositionner, mettra l'élément ou il devrai se mettre automatiquement; relative: si on ajoute une priorité, par 	      exemple left: 50px, ajoutera 50 px à left mais ne mettra pas left à 50px)
+	      background-image: url('img.jpg'); (image en arrière plan)
+	      background-repeat: no-repeat; (faite en sorte que limage d'arrière plan avec background-image ne se répète pas en motif)
+	      background-size: cover; AND background-attachment: fixed; (fait en sorte que si on met une image, elle recouvre tout l'arrière plan si à la place de cover, 100% 100%, limage se redimensionne 	      par rapport à la fenêtre)
+	      border-collapse: collapse; (fond les bordures dans un tableau html)
+	      border-spacing; 15px; (espace les item d'un tableau html)
+	      list-style-type:none; (style d'item de liste, accepte none, square circle disc square)
+
+
 __________________________________________________________________________________________________________________________________________________________________________________________________________
 
 Code complexe:
 
 #id{} (sélecteur avec id donné à un élément dans un fichier HTML)
 .class{} (sélecteur avec classe donnée à un élément dans un fichier HTML)	    
+
+CONCEPT DE BOITE:
+
+Contenu-->padding (marge intérieure)-->border (bords)-->margin (marge extérieure)
+
+Types de styles: solid dotted(pointillé) dashed(traits) double groove(trou) ridge(bosse) inset(vers l'intérieur) outset(vers l'extérieur)
 
 __________________________________________________________________________________________________________________________________________________________________________________________________________
 
